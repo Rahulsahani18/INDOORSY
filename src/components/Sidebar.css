@@ -1,0 +1,82 @@
+.sidebar {
+  width: 100px;
+  background-color: white;
+  border-right: 1px solid #ccc;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.sidebar-divider {
+  width: 1px;
+  height: 150px;
+  background-color: #b9b9ba;
+}
+
+/* Social icons */
+.social-icons svg {
+  font-size: 30px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.social-icons svg:hover {
+  border-color: rgb(216, 153, 58);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .sidebar img {
+    width: 40px;
+  }
+
+  .sidebar-divider {
+    height: 80px;
+  }
+
+  .social-icons svg {
+    font-size: 20px;
+    padding: 2px;
+  }
+
+}
+
+@media (max-width: 575.98px) {
+  .sidebar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebar-divider {
+    display: none;
+  }
+
+  .social-icons {
+    flex-direction: row !important;
+    gap: 10px !important;
+    margin-top: 0 !important;
+  }
+
+
+
+}

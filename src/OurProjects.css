@@ -1,0 +1,96 @@
+.projects-section {
+  padding: 40px;
+  background-color: white;
+  /* text-align: center; */
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+.project-slider {
+  position: relative;
+}
+
+.project-card {
+  padding: 10px;
+  position: relative;
+}
+
+.project-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.project-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  transition: all 0.5s ease;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.project-label {
+  font-size: 18px;
+  color: #ffcccc;
+  margin-bottom: 5px;
+}
+
+.project-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Zoom and center on hover */
+.project-image-wrapper:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-image-wrapper:hover .project-overlay {
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Show arrows on hover */
+.project-slider:hover .slick-prev,
+.project-slider:hover .slick-next {
+  display: block !important;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .project-label {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
