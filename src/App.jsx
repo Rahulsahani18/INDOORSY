@@ -2,7 +2,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HeroSection from "./components/HeroSection";
 import NavbarDrawer from "./components/NavbarDrawer";
-import AboutIndoorsy from "./aboutIndoosy";
+import AboutIndoorsy from "./AboutIndoosy";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import OurProjects from "./OurProjects";
